@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#winLossMessage {
+    font-weight: bold;
+    display: none;
+    font-size: 24px;
+    color: white;
+    background-color: #339933;
+    padding: 10px;
+    -webkit-text-stroke: 1px black;
+}
+
+#gameBoard {
+    display: none;
+    font-size: 26px;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+    background-color: LightGray;
+    font-weight: bold;
+    border-style: solid;
+    border-color: white;
+    border-width: thick;
+}
+
+#guessTextBoxLabel {
+    display: none;
+    font-size: 20px;
+}
+
+#guessTextBox {
+    display: none;
+    font-size: 20px;
+}
+
+#enterGuess {
+    display: none;
+    margin: 10px;
+    font-size: 20px;
+}
+
+#newGameButton {
+    font-size: 20px;
+}
+
+#hiddenWord {
+    display: none;
+}
