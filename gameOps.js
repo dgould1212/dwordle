@@ -14,6 +14,7 @@ function playGame() {
   document.getElementById("a".concat(i.toString())).style = "color: white; background-color: Gray;";
   }
 
+
   document.getElementById('gameBoard').style.display = "block";
   document.getElementById('guessTextBoxLabel').style.display = "block";
   document.getElementById('guessTextBox').style.display = "block";
