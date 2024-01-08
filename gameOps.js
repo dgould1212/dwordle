@@ -51,15 +51,15 @@ function checkGuess(guess, hiddenWord, num) {
     const limit = num + 5
     for (let i = num; i < limit; i++) {
         document.getElementById("a".concat(i.toString())).innerHTML = guessArray[u];
-        document.getElementById("a".concat(i.toString())).style = "color: white; -webkit-text-stroke: 1px black;"
+        document.getElementById("a".concat(i.toString())).style = "color: white;"
         u++;
     }
 
     for (let i = 0; i < 5; i++) {
         if (guessArray[i] == hiddenArray[i]) {
-            document.getElementById('a'.concat((num + i).toString())).style = "color: white; background-color: #339933; -webkit-text-stroke: 1px black;";
+            document.getElementById('a'.concat((num + i).toString())).style = "color: white; background-color: #339933;";
         } else if (hiddenWord.includes(guessArray[i])) {
-            document.getElementById('a'.concat((num + i).toString())).style = "color: white; background-color: GoldenRod; -webkit-text-stroke: 1px black;";
+            document.getElementById('a'.concat((num + i).toString())).style = "color: white; background-color: GoldenRod;";
         }
     }
 
