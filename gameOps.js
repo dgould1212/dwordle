@@ -11,7 +11,7 @@ function playGame() {
 
   for (let i = 1; i < 31; i++) {
   document.getElementById("a".concat(i.toString())).innerHTML = "";
-  document.getElementById("a".concat(i.toString())).style = "color: white; background-color: Gray;";
+  document.getElementById("a".concat(i.toString())).style = "color: white; background-color: DarkGray;";
   }
 
 
