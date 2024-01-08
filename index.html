@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordle</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <script src="./gameOps.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Wordle</h1>
+    <p class="text-center" id="winLossMessage"></p>
+    <table id="gameBoard">
+      <tbody>
+        <tr class="gameRow">
+          <td class="text-center" id="a1"></td>
+          <td class="text-center" id="a2"></td>
+          <td class="text-center" id="a3"></td>
+          <td class="text-center" id="a4"></td>
+          <td class="text-center" id="a5"></td>
+        </tr>
+        <tr class="gameRow">
+          <td class="text-center" id="a6"></td>
+          <td class="text-center" id="a7"></td>
+          <td class="text-center" id="a8"></td>
+          <td class="text-center" id="a9"></td>
+          <td class="text-center" id="a10"></td>
+        </tr>
+        <tr class="gameRow">
+          <td class="text-center" id="a11"></td>
+          <td class="text-center" id="a12"></td>
+          <td class="text-center" id="a13"></td>
+          <td class="text-center" id="a14"></td>
+          <td class="text-center" id="a15"></td>
+        </tr>
+        <tr class="gameRow">
+          <td class="text-center" id="a16"></td>
+          <td class="text-center" id="a17"></td>
+          <td class="text-center" id="a18"></td>
+          <td class="text-center" id="a19"></td>
+          <td class="text-center" id="a20"></td>
+        </tr>
+        <tr class="gameRow">
+          <td class="text-center" id="a21"></td>
+          <td class="text-center" id="a22"></td>
+          <td class="text-center" id="a23"></td>
+          <td class="text-center" id="a24"></td>
+          <td class="text-center" id="a25"></td>
+        </tr>
+        <tr class="gameRow">
+          <td class="text-center" id="a26"></td>
+          <td class="text-center" id="a27"></td>
+          <td class="text-center" id="a28"></td>
+          <td class="text-center" id="a29"></td>
+          <td class="text-center" id="a30"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="guessTextBoxLabel">
+      <p>Enter a guess:</p>
+    </div>
+    <div id="guessTextBox">
+      <input type="text" id="guess" name="guess">
+    </div>
+    <div id="enterGuess">
+      <button onclick="makeGuess()">Enter Guess</button>
+    </div>
+    <div id="newGameButton">
+      <button id="playNewGame" onclick="playGame()">Play Wordle</button>
+    </div>
+    <a id="hiddenWord"></a>
+  </div>
+</body>
+</html>
